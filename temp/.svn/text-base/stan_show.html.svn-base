@@ -1,0 +1,463 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html>
+<head>
+	<TITLE>stan format page</TITLE>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="excanvas.js"></script>
+	<script type="text/javascript" src="html5.js"></script>
+	<script language="javascript" src="xml_gdb.js"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="xml_gdb.css">
+	<style>
+	.stan {
+		border: 1px solid;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		width: 400px;
+		height: 440px;
+		overflow: auto;
+		position: relative;
+		padding: 0;
+		line-height: 100%;
+		overflow-y: scroll;
+		overflow-x: scroll;
+	}
+	.mybutton {
+		width: 80px;
+	}
+	</style>
+	<script language="javascript">
+		function format() {
+			var domContent = document.getElementById("content");
+			var domResult = showXmlGdb(domContent.value, 0);
+			document.getElementById("result").innerHTML = domResult.outerHTML;
+		}
+		function example1() {
+			var text = "\n$1 = {\n"
+				+ "    B_PROCESS_ID = {\n"
+				+ "        B_PID_PROCESS_ID = {\n"
+				+ "        {\n"
+				+ "            {\n"
+				+ "                B_PID_LCE = 1\n"
+				+ "            },\n"
+				+ "            {\n"
+				+ "                B_PID_VP_INDEX = 1\n"
+				+ "            }\n"
+				+ "        }\n"
+				+ "        },\n"
+				+ "        B_PID_PID = 29\n"
+				+ "    },\n"
+				+ "    B_REF_NBR = 10\n"
+				+ "}\n";
+			document.getElementById("content").value = text;
+		}
+		function example2() {
+			var domExample = document.getElementById("example2");
+			var text = domExample.textContent || domExample.innerText;
+			document.getElementById("content").value = text;
+		}
+		function reset() {
+			document.getElementById("content").value = "";
+			document.getElementById("result").innerHTML = "";
+		}
+	</script>
+</head>
+<body>
+	<div style="margin:20px 0px; font-size:26px;">
+		Format STAN or GDB result
+	</div>
+	<div>
+		Please input the stan result:
+		<a href="javascript:example1()">example1</a>
+		<a href="javascript:example2()">example2</a>
+	</div>
+	<table id="table">
+		<tr>
+			<td><textarea id="content" class="stan"></textarea></td>
+			<td>
+				<button type="button" onclick="format()" class="mybutton">format >></button>
+				<br/><br/>
+				<button type="reset" onclick="reset()" class="mybutton">reset</button>
+			</td>
+			<td valign="top"><div id="result" class="stan"></div></td>
+		</tr>
+	</table>
+<div id="example2" style="display:none">
+$1 = {
+  B_FMM_ID = 16391, 
+  B_REP_ARR = {1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0 <repeats 11 times>}, 
+  B_ALM_BLOCK = {
+    B_ALARM_TYPE = {
+      B_ALARM_CLASS = 43, 
+      {
+        {
+          B_ATCLK = 4
+        }, 
+        {
+          B_ATOMU = 4
+        }, 
+        {
+          B_ATSWAN = 4
+        }, 
+        {
+          B_ATENVIR = 4
+        }, 
+        {
+          B_ATRF = 4
+        }, 
+        {
+          B_ATFU = 4
+        }, 
+        {
+          B_ATGBTS = 4
+        }, 
+        {
+          B_ATBTSEXTERNAL = 4
+        }, 
+        {
+          B_ATRXTX = 4
+        }, 
+        {
+          B_ATBTSTRANS = 4
+        }, 
+        {
+          B_ATBSCENVIRON = 4
+        }, 
+        {
+          B_ATPROCESSOR = 4
+        }, 
+        {
+          B_ATSWITCH = 4
+        }, 
+        {
+          B_ATN7 = 4
+        }, 
+        {
+          B_ATTRUNK = 4
+        }, 
+        {
+          B_ATLAPD = 4
+        }, 
+        {
+          B_ATX25 = 4
+        }, 
+        {
+          B_ATBSCSWANOMALY = 4
+        }, 
+        {
+          B_ATTELECOM = 4
+        }, 
+        {
+          B_ATCELL = 4
+        }, 
+        {
+          B_ATBTSOM = 4
+        }, 
+        {
+          B_ATCHANNEL = 4
+        }, 
+        {
+          B_ATBACKUPMED = 4
+        }, 
+        {
+          B_ATGLOBALBSC = 4
+        }, 
+        {
+          B_ATTROM = 4
+        }, 
+        {
+          B_ATALERTER = 4
+        }, 
+        {
+          B_ATBSCEXTERNAL = 4
+        }, 
+        {
+          B_ATSWITCHG2 = 4
+        }, 
+        {
+          B_ATBSCCLOCK = 4
+        }, 
+        {
+          B_ATBRCASTBUS = 4
+        }, 
+        {
+          B_ATBTSPOOL = 4
+        }, 
+        {
+          B_ATTSCTRUNK = 4
+        }, 
+        {
+          B_ATTSCCHAN = 4
+        }, 
+        {
+          B_ATTSCQMUX = 4
+        }, 
+        {
+          B_ATTSCSWANOM = 4
+        }, 
+        {
+          B_ATTSC_ENV = 4
+        }, 
+        {
+          B_ATBSC_ADAPT = 4
+        }, 
+        {
+          B_ATBTS_ADAPT = 4
+        }, 
+        {
+          B_ATTCSM_ADAPT = 4
+        }, 
+        {
+          B_ATPROCESS = 4
+        }, 
+        {
+          B_ATCA_PROC = 4
+        }, 
+        {
+          B_ATCA_SWITCH = 4
+        }, 
+        {
+          B_ATCA_SHELF = 4
+        }, 
+        {
+          B_LIU_SHELF = 4
+        }, 
+        {
+          B_BSC_TRANS = 4
+        }, 
+        {
+          B_TC_TRANS = 4
+        }, 
+        {
+          B_TC_IF = 4
+        }, 
+        {
+          B_TC_OM = 4
+        }, 
+        {
+          B_TRANSCODER = 4
+        }, 
+        {
+          B_ATER_TRANSM = 4
+        }, 
+        {
+          B_ATERMUX_POOL = 4
+        }, 
+        {
+          B_ATTP_SW_ANOM = 4
+        }, 
+        {
+          B_ATM3UA = 4
+        }, 
+        {
+          B_DUMMY = 4
+        }
+      }
+    }, 
+    B_ALARM_NUMBER = 1, 
+    B_ALARM_CAT = 3, 
+    B_ALARM_COND = 2
+  }, 
+  B_FLT_LOC_UN = {
+    B_UNTYP = 0, 
+    B_UNNBR = 1
+  }, 
+  B_UNIT_BLOCK = {
+    B_UNTYP = 1, 
+    B_UNNBR = 1
+  }, 
+  B_SBL_BLOCK = {
+    B_SBLTYPE = 60, 
+    B_SN = 1, 
+    B_SSN = 255
+  }, 
+  {
+    {
+      B_PR_STATE = E_MS_FLT, 
+      B_CURR_STATE = E_MS_FLT, 
+      B_RIT_BLOCK = {{
+          B_RUTP = 255, 
+          B_RUNB = 255, 
+          B_RRAL = 255, 
+          B_RSHL = 255, 
+          B_RSLL = 255, 
+          B_RTY = 65535
+        }, {
+          B_RUTP = 255, 
+          B_RUNB = 255, 
+          B_RRAL = 255, 
+          B_RSHL = 255, 
+          B_RSLL = 255, 
+          B_RTY = 65535
+        }, {
+          B_RUTP = 255, 
+          B_RUNB = 255, 
+          B_RRAL = 255, 
+          B_RSHL = 255, 
+          B_RSLL = 255, 
+          B_RTY = 65535
+        }, {
+          B_RUTP = 255, 
+          B_RUNB = 255, 
+          B_RRAL = 255, 
+          B_RSHL = 255, 
+          B_RSLL = 255, 
+          B_RTY = 65535
+        }, {
+          B_RUTP = 255, 
+          B_RUNB = 255, 
+          B_RRAL = 255, 
+          B_RSHL = 255, 
+          B_RSLL = 255, 
+          B_RTY = 65535
+        }, {
+          B_RUTP = 255, 
+          B_RUNB = 255, 
+          B_RRAL = 255, 
+          B_RSHL = 255, 
+          B_RSLL = 255, 
+          B_RTY = 65535
+        }, {
+          B_RUTP = 255, 
+          B_RUNB = 255, 
+          B_RRAL = 255, 
+          B_RSHL = 255, 
+          B_RSLL = 255, 
+          B_RTY = 65535
+        }, {
+          B_RUTP = 255, 
+          B_RUNB = 255, 
+          B_RRAL = 255, 
+          B_RSHL = 255, 
+          B_RSLL = 255, 
+          B_RTY = 65535
+        }, {
+          B_RUTP = 255, 
+          B_RUNB = 255, 
+          B_RRAL = 255, 
+          B_RSHL = 255, 
+          B_RSLL = 255, 
+          B_RTY = 65535
+        }, {
+          B_RUTP = 255, 
+          B_RUNB = 255, 
+          B_RRAL = 255, 
+          B_RSHL = 255, 
+          B_RSLL = 255, 
+          B_RTY = 65535
+        }}, 
+      B_SUSP_RIT_BL = {{
+          B_RUTP = 0, 
+          B_RUNB = 1, 
+          B_RRAL = 15, 
+          B_RSHL = 15, 
+          B_RSLL = 255, 
+          B_RTY = 0
+        }, {
+          B_RUTP = 255, 
+          B_RUNB = 255, 
+          B_RRAL = 255, 
+          B_RSHL = 255, 
+          B_RSLL = 255, 
+          B_RTY = 65535
+        }, {
+          B_RUTP = 255, 
+          B_RUNB = 255, 
+          B_RRAL = 255, 
+          B_RSHL = 255, 
+          B_RSLL = 255, 
+          B_RTY = 65535
+        }, {
+          B_RUTP = 255, 
+          B_RUNB = 255, 
+          B_RRAL = 255, 
+          B_RSHL = 255, 
+          B_RSLL = 255, 
+          B_RTY = 65535
+        }, {
+          B_RUTP = 255, 
+          B_RUNB = 255, 
+          B_RRAL = 255, 
+          B_RSHL = 255, 
+          B_RSLL = 255, 
+          B_RTY = 65535
+        }, {
+          B_RUTP = 255, 
+          B_RUNB = 255, 
+          B_RRAL = 255, 
+          B_RSHL = 255, 
+          B_RSLL = 255, 
+          B_RTY = 65535
+        }, {
+          B_RUTP = 255, 
+          B_RUNB = 255, 
+          B_RRAL = 255, 
+          B_RSHL = 255, 
+          B_RSLL = 255, 
+          B_RTY = 65535
+        }, {
+          B_RUTP = 255, 
+          B_RUNB = 255, 
+          B_RRAL = 255, 
+          B_RSHL = 255, 
+          B_RSLL = 255, 
+          B_RTY = 65535
+        }, {
+          B_RUTP = 255, 
+          B_RUNB = 255, 
+          B_RRAL = 255, 
+          B_RSHL = 255, 
+          B_RSLL = 255, 
+          B_RTY = 65535
+        }, {
+          B_RUTP = 255, 
+          B_RUNB = 255, 
+          B_RRAL = 255, 
+          B_RSHL = 255, 
+          B_RSLL = 255, 
+          B_RTY = 65535
+        }}, 
+      B_DEF_ACT = 10, 
+      B_ORIGIN_ACT = 4, 
+      B_CAUSE_ACT = 0, 
+      B_TIMESTAMP = {
+        B_YEAR = 2012, 
+        B_MONTH = 4, 
+        B_DAY = 19, 
+        B_HOUR = 9, 
+        B_MINUTE = 41, 
+        B_SECOND = 55, 
+        B_TENTHSEC = 8
+      }, 
+      B_ADD_INFO = {{17, 255, 255, 1, 1, 255 <repeats 15 times>}, {0 <repeats 20 times>} <repeats 16 times>}, 
+      B_FILTERBLK = {
+        B_FILTERTYPE = E_NO_BTS_FILTERING, 
+        B_NBOFFILTEREDALMS = 0
+      }, 
+      B_LOG_ALM = false, 
+      B_TST_BLOCK = {{
+          B_TESTERRINFO = 0, 
+          B_TEST_SEG_NBR = 0, 
+          B_FAULT_TYPE = 0, 
+          B_RAW_DATA = {0 <repeats 20 times>}
+        } <repeats 16 times>}
+    }, 
+    {
+      B_CU_RESS = {3, 3, 255, 255, 255, 255, 255, 255}, 
+      B_LNA_RES = {255, 255}, 
+      B_RTE_RES = 255, 
+      B_BER = {
+        B_LS16B = -1, 
+        B_MS16B = -1
+      }, 
+      B_RXLEV_ATT = 255, 
+      B_RXLEV_NO_ATT = 255, 
+      B_RTE_ERR_COUNT = {255 <repeats 20 times>}, 
+      B_ADD_FAIL_CAUSE = {255 <repeats 20 times>}
+    }
+  }
+}
+</div>
+</body>
+</html>

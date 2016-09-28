@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html>
+        <head>
+                <TITLE>Decode Auto</TITLE>
+        <script language="javascript" src="common.js"> </script>
+                <script language="javascript" src="./temp/filter.js"> </script>
+                <script language="javascript" src="./temp/center.js">
+                </script>
+                <LINK REL=STYLESHEET TYPE="text/css" HREF="../util.css">
+        </head>
+
+        <!-- <body onload="load_singlemsg_def();">   -->
+        <body>
+                        <H1 bgcolor=#9966ff align="center">Decode Trace Auto</H1>
+
+                <p>Please input the message:<a href="./temp/format.html">format</a></p>
+
+                <Form name="single_msg">
+                        <INPUT type="hidden" name="action" value="decodesinglemsg">
+                        <INPUT type="hidden" name="uname">
+                        <TABLE id="Table1" cellSpacing="1" cellPadding="1" width="100%" border="0">
+                                <TR>
+                                        <TD><div id="user_panel"></div></TD>
+                                </TR>
+                                <TR>
+                                        <TD>
+                                        <span>Version: &nbsp;</span>
+                                        <select name="select" id="select_version">
+                                                <option value="B11_MX_MR3_ED2">B11_MX_MR3_ED2</option>
+                                                <option value="B11_MX_MR3_ED1">B11_MX_MR3_ED1</option>
+                                                <option value="B11_MX_MR1_ED2">B11_MX_MR1_ED2</option>
+                                                <option value="B12_MR2_ED2">B12_MR2_ED2</option>
+                                                <option value="B12_MR1">B12_MR1</option>
+                                                <option value="B12_MR1_ED0">B12_MR1_ED0</option>
+                                                <option value="B12_MR2_ED1">B12_MR2_ED1</option>
+                                                <option value="B12_IROPTN">B12_IROPTN</option>
+                                                <option value="B12_350BTS">B12_350BTS</option>
+                                        </select>
+                                        </TD>
+
+                                </TR>
+                                <TR>
+                                        <TD><textarea id="msgcontent" name="msgcontent" rows="10" cols="100"></textarea></TD>
+                                </TR>
+                                <TR>
+                                        <TD>
+                                        <INPUT id="Button2" type="button" value="Decode" onclick="javascript:decode_single_msg();">&nbsp;&nbsp;
+                                        <INPUT id="Button1" type="reset" value="Reset" name="Reset" onclick="javascript:clear_div('showmsg');">
+                                        </TD>
+                                </TR>
+                                <TR>
+                                        <TD><DIV id="showmsg"></DIV></TD>
+                                </TR>
+                        </TABLE>
+                </Form>
+        </body>
+</html>
+

@@ -1,0 +1,82 @@
+/home/ftp/sw/tools/bscdata/rC/al92
+
+
+ytl7是relation
+ytl5al92, ytl5代表是mode
+----------------------------------------------------------------
+
+
+SYN M_A_CHAN_TYPE_ALARM_OCTET   M_A_CHAN_TYPE = 9;^M
+^M
+SYN M_A_CHAN_TYPE_CCS7              M_A_CHAN_TYPE             = 1 ;
+
+SYNMODE M_A_CTEXT         =   M_FTM_ACC_CTX;^M
+^M
+SYN M_A_MODIFY  M_FILE_ACCESS = H'03; /* E_A_READ]E_A_WRITE */^M
+^M
+SYN M_A_NOCHECK M_FILE_ACCESS = H'08;
+
+^M
+NEWMODE M_ABIS_ARRAY = ARRAY(1:16)  BOOL;^M
+^M
+NEWMODE M_ABIS_AVAILABILITY_GPRS = SET(^M
+                           E_NORMAL_ABIS_AVAIL     /*VALUE=0*/,^M
+                           E_SECONDARY_NOT_AVAIL   /*VALUE=1*/,^M
+                           E_PRIMARY_NOT_AVAIL     /*VALUE=2*/^M
+                                      );^M
+SYN M_AI_LINK_BY_LINK_FLCNTRL =  FALSE;^M
+^M
+SYN M_AI_NO_CONN_SECTIONS    = TRUE;^M
+^M
+SYN M_AL_ACC_CNTRL_PRES    = M_OSI_BITMAP(B'0000000000100000');^M
+^M
+SYN M_AL_CD_AE_INV_ID_PRES = M_OSI_BITMAP(B'0000000000000010');^M
+^M
+SYN M_AL_CD_AP_INV_ID_PRES = M_OSI_BITMAP(B'0000000000000001');^M
+^M
+SYN M_AL_CG_AE_INV_ID_PRES = M_OSI_BITMAP(B'0000000000001000');^M
+^M
+SYN M_AL_CG_AP_INV_ID_PRES = M_OSI_BITMAP(B'0000000000000100');^M
+
+SYNMODE M_ALARM_BITS = BIT(8);^M
+
+
+NEWMODE M_BITRATE = BIN(8);^M
+^M
+SYN M_BITRATE_2400 = M_BITRATE(0);^M
+^M
+SYN M_BITRATE_4800 = M_BITRATE(1);^M
+
+SYN  M_DPTC_RENUMBER_LIN_CH  M_DPTC_RENUM_ARRAY  =^M
+        (: (0) : 21 , /* CH 0 : NOT USED FOR JOINS  */^M
+           (1) : 22 ,^M
+           (2) : 23 ,^M
+           (3) : 24 ,^M
+           (4) : 25 ,^M
+           (5) : 26 ,   /*    RENUMBERING OF DPTC-CHANNELS :     */^M
+           (6) : 27 ,   /*                                       */^M
+           (7) : 28 ,   /* DPTC-CH ->----->-----> LIN OBCI-PORT  */^M
+           (8) : 29 ,   /*                                       */^M
+           (9) : 30 ,   /*     DPTC-CH + 21 = LIN CHANNEL        */^M
+          (10) : 31 ,   /*             ----                      */^M
+          (11) :  0 ,^M
+          (12) :  1 ,^M
+          (13) :  2 ,^M
+          (14) :  3 ,^M
+          (15) :  4 ,^M
+          (16) :  5 , /* CH 16 : NOT USED FOR JOINS  */^M
+          (17) :  6 ,^M
+          (18) :  7 ,^M
+          (19) :  8 ,^M
+          (20) :  9 ,^M
+          (21) : 10 ,^M
+          (22) : 11 ,^M
+          (23) : 12 ,^M
+          (24) : 13 ,^M
+          (25) : 14 ,^M
+          (26) : 15 ,^M
+          (27) : 16 ,^M
+          (28) : 17 ,^M
+          (29) : 18 ,^M
+          (30) : 19 ,^M
+          (31) : 20  :);^M

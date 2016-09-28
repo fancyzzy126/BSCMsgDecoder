@@ -1,0 +1,5 @@
+a2bc_ssm.chill_lst:11774:M_8PSK_POWER                  265  NEWMODE           8                 M_BYTE                     271      277      317     
+a2bc_ssm.chill_lst:11776:M_A2B_PREPINPUT               282  NEWMODE        9656                 STRUCT                     W415     W438     W487    
+a2bc_ssm.chill_lst:11807:M_A2B_RESULT                  285  NEWMODE         928                 STRUCT                     W407     W417     W1452   
+a2bc_ssm.chill_lst:11821:M_A2B_TRE_INFO                277  NEWMODE         112                 STRUCT                     280     
+a2bc_ssm.chill_lst:11856:M_A2B_TRX_INFO                278  NEWMODE         160                 STRUCT                     281     

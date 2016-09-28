@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <title>RTTP Filter</title>
+    <script language="javascript" src="../common.js"></script>
+    <script language="javascript" src="filter.js"></script>
+    <link rel="STYLESHEET" type="text/css" href="../util.css" />
+  </head>
+  <body onload="loaddef();">
+    <table>
+      <tr height="100%">
+        <td width="200" valign="top">
+          <table align="left">
+            <tr valign="top">
+              <td>
+			    <!--rel="external" for chrome -->
+                <a href="javascript:get_user_filter();" rel="external">Own Filters</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="javascript:get_all_filter();">All Filters</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="createfilter.html">Create Filter</a>
+              </td>
+            </tr>
+            <tr>
+              <td>Remove Filter</td>
+            </tr>
+            <tr>
+              <td>Modify Filter</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="javascript:showbuffer();" rel="external">Select Buffer Mode</a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="javascript:setversion();" rel="external">Select Version</a>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <div id="filter_panel"></div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

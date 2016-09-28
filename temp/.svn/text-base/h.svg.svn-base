@@ -1,0 +1,313 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-flat-20030114.dtd">
+<svg width="100%" height="100%"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
+   <title>Drag And Drop</title>
+   <script xlink:href="mainSvg.js" type="text/javascript"/>
+   <desc>
+      SVG for RTTP created by MJ.
+   </desc>
+<a id="fmm19" onmouseover="showFmm('fmm19 ME_BTS_CPR')"><rect id="Rectangle19" x="50" y="70" width="100" height="50" style="fill:red; stroke:brown; stroke-width:1;"/>
+   <text id="DraggableText19" x="50" y="100" style="fill:black; font-size:15px; font-weight:bold;">ME_BTS_CPR</text><line id="FmmLine19" x1="100" y1="120" x2="100" y2="100000" stroke-width="50" /></a>
+<a id="fmm18" onmouseover="showFmm('fmm18 ME_BTS_TCU')"><rect id="Rectangle18" x="250" y="70" width="100" height="50" style="fill:red; stroke:brown; stroke-width:1;"/>
+   <text id="DraggableText18" x="250" y="100" style="fill:black; font-size:15px; font-weight:bold;">ME_BTS_TCU</text><line id="FmmLine18" x1="300" y1="120" x2="300" y2="100000" stroke-width="50" /></a>
+<a id="fmm82" onmouseover="showFmm('fmm82 RMH_MSG_HANDLER')"><rect id="Rectangle82" x="450" y="70" width="100" height="50" style="fill:red; stroke:brown; stroke-width:1;"/>
+   <text id="DraggableText82" x="450" y="100" style="fill:black; font-size:15px; font-weight:bold;">RMH_MSG_HANDLER</text><line id="FmmLine82" x1="500" y1="120" x2="500" y2="100000" stroke-width="50" /></a>
+<a id="fmm0" onmouseover="showFmm('fmm0 dummy')"><rect id="Rectangle0" x="650" y="70" width="100" height="50" style="fill:red; stroke:brown; stroke-width:1;"/>
+   <text id="DraggableText0" x="650" y="100" style="fill:black; font-size:15px; font-weight:bold;">dummy</text><line id="FmmLine0" x1="700" y1="120" x2="700" y2="100000" stroke-width="50" /></a>
+<a id="fmm48" onmouseover="showFmm('fmm48 L7E_OSMAP_FMM')"><rect id="Rectangle48" x="850" y="70" width="100" height="50" style="fill:red; stroke:brown; stroke-width:1;"/>
+   <text id="DraggableText48" x="850" y="100" style="fill:black; font-size:15px; font-weight:bold;">L7E_OSMAP_FMM</text><line id="FmmLine48" x1="900" y1="120" x2="900" y2="100000" stroke-width="50" /></a>
+<a id="fmm67" onmouseover="showFmm('fmm67 BSC_SW_REPLACE')"><rect id="Rectangle67" x="1050" y="70" width="100" height="50" style="fill:red; stroke:brown; stroke-width:1;"/>
+   <text id="DraggableText67" x="1050" y="100" style="fill:black; font-size:15px; font-weight:bold;">BSC_SW_REPLACE</text><line id="FmmLine67" x1="1100" y1="120" x2="1100" y2="100000" stroke-width="50" /></a>
+<a id="msg411" onmouseover="showRaw('07:46:06:329$009499057')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:46:06:329$009499057')">
+   <line id="BlueLine" x1="100" y1="200" x2="300" y2="200" stroke-width="50"  />
+<line x1="300" y1="200" x2="290" y2="195" stroke-width="50"  />
+<line x1="300" y1="200" x2="290" y2="205" stroke-width="50"  />
+<text x="150" y="200" style="fill:black; font-size:15px; font-weight:bold;">0411_BTS_IND</text>
+   </a>
+<a id="msg507" onmouseover="showRaw('07:46:06:329$009499120')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:46:06:329$009499120')">
+   <line id="BlueLine" x1="100" y1="250" x2="500" y2="250" stroke-width="50"  />
+<line x1="500" y1="250" x2="490" y2="245" stroke-width="50"  />
+<line x1="500" y1="250" x2="490" y2="255" stroke-width="50"  />
+<text x="150" y="250" style="fill:black; font-size:15px; font-weight:bold;">0507_ENVELOPE_MSG</text>
+   </a>
+<a id="msg412" onmouseover="showRaw('07:46:06:345$009499263')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:46:06:345$009499263')">
+   <line id="BlueLine" x1="700" y1="300" x2="100" y2="300" stroke-width="50"  />
+<line x1="100" y1="300" x2="110" y2="295" stroke-width="50"  />
+<line x1="100" y1="300" x2="110" y2="305" stroke-width="50"  />
+<text x="150" y="300" style="fill:black; font-size:15px; font-weight:bold;">0412_BTS_REQ</text>
+   </a>
+<a id="msg411" onmouseover="showRaw('07:46:06:371$009499643')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:46:06:371$009499643')">
+   <line id="BlueLine" x1="100" y1="350" x2="300" y2="350" stroke-width="50"  />
+<line x1="300" y1="350" x2="290" y2="345" stroke-width="50"  />
+<line x1="300" y1="350" x2="290" y2="355" stroke-width="50"  />
+<text x="150" y="350" style="fill:black; font-size:15px; font-weight:bold;">0411_BTS_IND</text>
+   </a>
+<a id="msg507" onmouseover="showRaw('07:46:06:371$009499679')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:46:06:371$009499679')">
+   <line id="BlueLine" x1="100" y1="400" x2="500" y2="400" stroke-width="50"  />
+<line x1="500" y1="400" x2="490" y2="395" stroke-width="50"  />
+<line x1="500" y1="400" x2="490" y2="405" stroke-width="50"  />
+<text x="150" y="400" style="fill:black; font-size:15px; font-weight:bold;">0507_ENVELOPE_MSG</text>
+   </a>
+<a id="msg412" onmouseover="showRaw('07:46:06:403$009499737')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:46:06:403$009499737')">
+   <line id="BlueLine" x1="700" y1="450" x2="100" y2="450" stroke-width="50"  />
+<line x1="100" y1="450" x2="110" y2="445" stroke-width="50"  />
+<line x1="100" y1="450" x2="110" y2="455" stroke-width="50"  />
+<text x="150" y="450" style="fill:black; font-size:15px; font-weight:bold;">0412_BTS_REQ</text>
+   </a>
+<a id="msg412" onmouseover="showRaw('07:46:35:500$009500758')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:46:35:500$009500758')">
+   <line id="BlueLine" x1="700" y1="500" x2="100" y2="500" stroke-width="50"  />
+<line x1="100" y1="500" x2="110" y2="495" stroke-width="50"  />
+<line x1="100" y1="500" x2="110" y2="505" stroke-width="50"  />
+<text x="150" y="500" style="fill:black; font-size:15px; font-weight:bold;">0412_BTS_REQ</text>
+   </a>
+<a id="msg411" onmouseover="showRaw('07:46:35:500$009500792')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:46:35:500$009500792')">
+   <line id="BlueLine" x1="100" y1="550" x2="300" y2="550" stroke-width="50"  />
+<line x1="300" y1="550" x2="290" y2="545" stroke-width="50"  />
+<line x1="300" y1="550" x2="290" y2="555" stroke-width="50"  />
+<text x="150" y="550" style="fill:black; font-size:15px; font-weight:bold;">0411_BTS_IND</text>
+   </a>
+<a id="msg507" onmouseover="showRaw('07:46:35:527$009501393')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:46:35:527$009501393')">
+   <line id="BlueLine" x1="100" y1="600" x2="500" y2="600" stroke-width="50"  />
+<line x1="500" y1="600" x2="490" y2="595" stroke-width="50"  />
+<line x1="500" y1="600" x2="490" y2="605" stroke-width="50"  />
+<text x="150" y="600" style="fill:black; font-size:15px; font-weight:bold;">0507_ENVELOPE_MSG</text>
+   </a>
+<a id="msg412" onmouseover="showRaw('07:46:48:278$009502238')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:46:48:278$009502238')">
+   <line id="BlueLine" x1="700" y1="650" x2="100" y2="650" stroke-width="50"  />
+<line x1="100" y1="650" x2="110" y2="645" stroke-width="50"  />
+<line x1="100" y1="650" x2="110" y2="655" stroke-width="50"  />
+<text x="150" y="650" style="fill:black; font-size:15px; font-weight:bold;">0412_BTS_REQ</text>
+   </a>
+<a id="msg411" onmouseover="showRaw('07:46:48:278$009502272')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:46:48:278$009502272')">
+   <line id="BlueLine" x1="100" y1="700" x2="300" y2="700" stroke-width="50"  />
+<line x1="300" y1="700" x2="290" y2="695" stroke-width="50"  />
+<line x1="300" y1="700" x2="290" y2="705" stroke-width="50"  />
+<text x="150" y="700" style="fill:black; font-size:15px; font-weight:bold;">0411_BTS_IND</text>
+   </a>
+<a id="msg507" onmouseover="showRaw('07:46:48:321$009502962')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:46:48:321$009502962')">
+   <line id="BlueLine" x1="100" y1="750" x2="500" y2="750" stroke-width="50"  />
+<line x1="500" y1="750" x2="490" y2="745" stroke-width="50"  />
+<line x1="500" y1="750" x2="490" y2="755" stroke-width="50"  />
+<text x="150" y="750" style="fill:black; font-size:15px; font-weight:bold;">0507_ENVELOPE_MSG</text>
+   </a>
+<a id="msg508" onmouseover="showRaw('07:47:30:371$009509136')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:47:30:371$009509136')">
+   <line id="BlueLine" x1="900" y1="800" x2="500" y2="800" stroke-width="50"  />
+<line x1="500" y1="800" x2="510" y2="795" stroke-width="50"  />
+<line x1="500" y1="800" x2="510" y2="805" stroke-width="50"  />
+<text x="550" y="800" style="fill:black; font-size:15px; font-weight:bold;">0508_ENVELOPE_MSGB</text>
+   </a>
+<a id="msg411" onmouseover="showRaw('07:48:46:082$009526652')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:48:46:082$009526652')">
+   <line id="BlueLine" x1="100" y1="850" x2="300" y2="850" stroke-width="50"  />
+<line x1="300" y1="850" x2="290" y2="845" stroke-width="50"  />
+<line x1="300" y1="850" x2="290" y2="855" stroke-width="50"  />
+<text x="150" y="850" style="fill:black; font-size:15px; font-weight:bold;">0411_BTS_IND</text>
+   </a>
+<a id="msg507" onmouseover="showRaw('07:48:46:082$009526688')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:48:46:082$009526688')">
+   <line id="BlueLine" x1="100" y1="900" x2="500" y2="900" stroke-width="50"  />
+<line x1="500" y1="900" x2="490" y2="895" stroke-width="50"  />
+<line x1="500" y1="900" x2="490" y2="905" stroke-width="50"  />
+<text x="150" y="900" style="fill:black; font-size:15px; font-weight:bold;">0507_ENVELOPE_MSG</text>
+   </a>
+<a id="msg411" onmouseover="showRaw('07:48:46:124$009527226')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:48:46:124$009527226')">
+   <line id="BlueLine" x1="100" y1="950" x2="300" y2="950" stroke-width="50"  />
+<line x1="300" y1="950" x2="290" y2="945" stroke-width="50"  />
+<line x1="300" y1="950" x2="290" y2="955" stroke-width="50"  />
+<text x="150" y="950" style="fill:black; font-size:15px; font-weight:bold;">0411_BTS_IND</text>
+   </a>
+<a id="msg507" onmouseover="showRaw('07:48:46:124$009527289')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:48:46:124$009527289')">
+   <line id="BlueLine" x1="100" y1="1000" x2="500" y2="1000" stroke-width="50"  />
+<line x1="500" y1="1000" x2="490" y2="995" stroke-width="50"  />
+<line x1="500" y1="1000" x2="490" y2="1005" stroke-width="50"  />
+<text x="150" y="1000" style="fill:black; font-size:15px; font-weight:bold;">0507_ENVELOPE_MSG</text>
+   </a>
+<a id="msg412" onmouseover="showRaw('07:48:46:131$009527300')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:48:46:131$009527300')">
+   <line id="BlueLine" x1="700" y1="1050" x2="100" y2="1050" stroke-width="50"  />
+<line x1="100" y1="1050" x2="110" y2="1045" stroke-width="50"  />
+<line x1="100" y1="1050" x2="110" y2="1055" stroke-width="50"  />
+<text x="150" y="1050" style="fill:black; font-size:15px; font-weight:bold;">0412_BTS_REQ</text>
+   </a>
+<a id="msg412" onmouseover="showRaw('07:48:46:139$009527312')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:48:46:139$009527312')">
+   <line id="BlueLine" x1="700" y1="1100" x2="100" y2="1100" stroke-width="50"  />
+<line x1="100" y1="1100" x2="110" y2="1095" stroke-width="50"  />
+<line x1="100" y1="1100" x2="110" y2="1105" stroke-width="50"  />
+<text x="150" y="1100" style="fill:black; font-size:15px; font-weight:bold;">0412_BTS_REQ</text>
+   </a>
+<a id="msg508" onmouseover="showRaw('07:48:59:228$009527796')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:48:59:228$009527796')">
+   <line id="BlueLine" x1="900" y1="1150" x2="500" y2="1150" stroke-width="50"  />
+<line x1="500" y1="1150" x2="510" y2="1145" stroke-width="50"  />
+<line x1="500" y1="1150" x2="510" y2="1155" stroke-width="50"  />
+<text x="550" y="1150" style="fill:black; font-size:15px; font-weight:bold;">0508_ENVELOPE_MSGB</text>
+   </a>
+<a id="msg412" onmouseover="showRaw('07:49:15:104$009528383')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:49:15:104$009528383')">
+   <line id="BlueLine" x1="700" y1="1200" x2="100" y2="1200" stroke-width="50"  />
+<line x1="100" y1="1200" x2="110" y2="1195" stroke-width="50"  />
+<line x1="100" y1="1200" x2="110" y2="1205" stroke-width="50"  />
+<text x="150" y="1200" style="fill:black; font-size:15px; font-weight:bold;">0412_BTS_REQ</text>
+   </a>
+<a id="msg411" onmouseover="showRaw('07:49:15:104$009528417')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:49:15:104$009528417')">
+   <line id="BlueLine" x1="100" y1="1250" x2="300" y2="1250" stroke-width="50"  />
+<line x1="300" y1="1250" x2="290" y2="1245" stroke-width="50"  />
+<line x1="300" y1="1250" x2="290" y2="1255" stroke-width="50"  />
+<text x="150" y="1250" style="fill:black; font-size:15px; font-weight:bold;">0411_BTS_IND</text>
+   </a>
+<a id="msg507" onmouseover="showRaw('07:49:15:132$009529025')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:49:15:132$009529025')">
+   <line id="BlueLine" x1="100" y1="1300" x2="500" y2="1300" stroke-width="50"  />
+<line x1="500" y1="1300" x2="490" y2="1295" stroke-width="50"  />
+<line x1="500" y1="1300" x2="490" y2="1305" stroke-width="50"  />
+<text x="150" y="1300" style="fill:black; font-size:15px; font-weight:bold;">0507_ENVELOPE_MSG</text>
+   </a>
+<a id="msg412" onmouseover="showRaw('07:49:28:416$009529824')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:49:28:416$009529824')">
+   <line id="BlueLine" x1="700" y1="1350" x2="100" y2="1350" stroke-width="50"  />
+<line x1="100" y1="1350" x2="110" y2="1345" stroke-width="50"  />
+<line x1="100" y1="1350" x2="110" y2="1355" stroke-width="50"  />
+<text x="150" y="1350" style="fill:black; font-size:15px; font-weight:bold;">0412_BTS_REQ</text>
+   </a>
+<a id="msg411" onmouseover="showRaw('07:49:28:416$009529858')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:49:28:416$009529858')">
+   <line id="BlueLine" x1="100" y1="1400" x2="300" y2="1400" stroke-width="50"  />
+<line x1="300" y1="1400" x2="290" y2="1395" stroke-width="50"  />
+<line x1="300" y1="1400" x2="290" y2="1405" stroke-width="50"  />
+<text x="150" y="1400" style="fill:black; font-size:15px; font-weight:bold;">0411_BTS_IND</text>
+   </a>
+<a id="msg507" onmouseover="showRaw('07:49:28:434$009530548')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:49:28:434$009530548')">
+   <line id="BlueLine" x1="100" y1="1450" x2="500" y2="1450" stroke-width="50"  />
+<line x1="500" y1="1450" x2="490" y2="1445" stroke-width="50"  />
+<line x1="500" y1="1450" x2="490" y2="1455" stroke-width="50"  />
+<text x="150" y="1450" style="fill:black; font-size:15px; font-weight:bold;">0507_ENVELOPE_MSG</text>
+   </a>
+<a id="msg508" onmouseover="showRaw('07:50:30:046$009537569')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:50:30:046$009537569')">
+   <line id="BlueLine" x1="900" y1="1500" x2="500" y2="1500" stroke-width="50"  />
+<line x1="500" y1="1500" x2="510" y2="1495" stroke-width="50"  />
+<line x1="500" y1="1500" x2="510" y2="1505" stroke-width="50"  />
+<text x="550" y="1500" style="fill:black; font-size:15px; font-weight:bold;">0508_ENVELOPE_MSGB</text>
+   </a>
+<a id="msg411" onmouseover="showRaw('07:50:41:284$009552657')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:50:41:284$009552657')">
+   <line id="BlueLine" x1="100" y1="1550" x2="300" y2="1550" stroke-width="50"  />
+<line x1="300" y1="1550" x2="290" y2="1545" stroke-width="50"  />
+<line x1="300" y1="1550" x2="290" y2="1555" stroke-width="50"  />
+<text x="150" y="1550" style="fill:black; font-size:15px; font-weight:bold;">0411_BTS_IND</text>
+   </a>
+<a id="msg507" onmouseover="showRaw('07:50:41:284$009552720')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:50:41:284$009552720')">
+   <line id="BlueLine" x1="100" y1="1600" x2="500" y2="1600" stroke-width="50"  />
+<line x1="500" y1="1600" x2="490" y2="1595" stroke-width="50"  />
+<line x1="500" y1="1600" x2="490" y2="1605" stroke-width="50"  />
+<text x="150" y="1600" style="fill:black; font-size:15px; font-weight:bold;">0507_ENVELOPE_MSG</text>
+   </a>
+<a id="msg411" onmouseover="showRaw('07:50:41:326$009553231')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:50:41:326$009553231')">
+   <line id="BlueLine" x1="100" y1="1650" x2="300" y2="1650" stroke-width="50"  />
+<line x1="300" y1="1650" x2="290" y2="1645" stroke-width="50"  />
+<line x1="300" y1="1650" x2="290" y2="1655" stroke-width="50"  />
+<text x="150" y="1650" style="fill:black; font-size:15px; font-weight:bold;">0411_BTS_IND</text>
+   </a>
+<a id="msg507" onmouseover="showRaw('07:50:41:326$009553294')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:50:41:326$009553294')">
+   <line id="BlueLine" x1="100" y1="1700" x2="500" y2="1700" stroke-width="50"  />
+<line x1="500" y1="1700" x2="490" y2="1695" stroke-width="50"  />
+<line x1="500" y1="1700" x2="490" y2="1705" stroke-width="50"  />
+<text x="150" y="1700" style="fill:black; font-size:15px; font-weight:bold;">0507_ENVELOPE_MSG</text>
+   </a>
+<a id="msg412" onmouseover="showRaw('07:50:41:340$009553305')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:50:41:340$009553305')">
+   <line id="BlueLine" x1="700" y1="1750" x2="100" y2="1750" stroke-width="50"  />
+<line x1="100" y1="1750" x2="110" y2="1745" stroke-width="50"  />
+<line x1="100" y1="1750" x2="110" y2="1755" stroke-width="50"  />
+<text x="150" y="1750" style="fill:black; font-size:15px; font-weight:bold;">0412_BTS_REQ</text>
+   </a>
+<a id="msg412" onmouseover="showRaw('07:50:41:340$009553317')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:50:41:340$009553317')">
+   <line id="BlueLine" x1="700" y1="1800" x2="100" y2="1800" stroke-width="50"  />
+<line x1="100" y1="1800" x2="110" y2="1795" stroke-width="50"  />
+<line x1="100" y1="1800" x2="110" y2="1805" stroke-width="50"  />
+<text x="150" y="1800" style="fill:black; font-size:15px; font-weight:bold;">0412_BTS_REQ</text>
+   </a>
+<a id="msg412" onmouseover="showRaw('07:51:11:446$009554438')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:51:11:446$009554438')">
+   <line id="BlueLine" x1="700" y1="1850" x2="100" y2="1850" stroke-width="50"  />
+<line x1="100" y1="1850" x2="110" y2="1845" stroke-width="50"  />
+<line x1="100" y1="1850" x2="110" y2="1855" stroke-width="50"  />
+<text x="150" y="1850" style="fill:black; font-size:15px; font-weight:bold;">0412_BTS_REQ</text>
+   </a>
+<a id="msg411" onmouseover="showRaw('07:51:11:446$009554472')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:51:11:446$009554472')">
+   <line id="BlueLine" x1="100" y1="1900" x2="300" y2="1900" stroke-width="50"  />
+<line x1="300" y1="1900" x2="290" y2="1895" stroke-width="50"  />
+<line x1="300" y1="1900" x2="290" y2="1905" stroke-width="50"  />
+<text x="150" y="1900" style="fill:black; font-size:15px; font-weight:bold;">0411_BTS_IND</text>
+   </a>
+<a id="msg507" onmouseover="showRaw('07:51:11:488$009555073')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:51:11:488$009555073')">
+   <line id="BlueLine" x1="100" y1="1950" x2="500" y2="1950" stroke-width="50"  />
+<line x1="500" y1="1950" x2="490" y2="1945" stroke-width="50"  />
+<line x1="500" y1="1950" x2="490" y2="1955" stroke-width="50"  />
+<text x="150" y="1950" style="fill:black; font-size:15px; font-weight:bold;">0507_ENVELOPE_MSG</text>
+   </a>
+<a id="msg412" onmouseover="showRaw('07:51:24:281$009555873')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:51:24:281$009555873')">
+   <line id="BlueLine" x1="700" y1="2000" x2="100" y2="2000" stroke-width="50"  />
+<line x1="100" y1="2000" x2="110" y2="1995" stroke-width="50"  />
+<line x1="100" y1="2000" x2="110" y2="2005" stroke-width="50"  />
+<text x="150" y="2000" style="fill:black; font-size:15px; font-weight:bold;">0412_BTS_REQ</text>
+   </a>
+<a id="msg411" onmouseover="showRaw('07:51:24:281$009555907')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:51:24:281$009555907')">
+   <line id="BlueLine" x1="100" y1="2050" x2="300" y2="2050" stroke-width="50"  />
+<line x1="300" y1="2050" x2="290" y2="2045" stroke-width="50"  />
+<line x1="300" y1="2050" x2="290" y2="2055" stroke-width="50"  />
+<text x="150" y="2050" style="fill:black; font-size:15px; font-weight:bold;">0411_BTS_IND</text>
+   </a>
+<a id="msg507" onmouseover="showRaw('07:51:24:326$009556597')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:51:24:326$009556597')">
+   <line id="BlueLine" x1="100" y1="2100" x2="500" y2="2100" stroke-width="50"  />
+<line x1="500" y1="2100" x2="490" y2="2095" stroke-width="50"  />
+<line x1="500" y1="2100" x2="490" y2="2105" stroke-width="50"  />
+<text x="150" y="2100" style="fill:black; font-size:15px; font-weight:bold;">0507_ENVELOPE_MSG</text>
+   </a>
+<a id="msg508" onmouseover="showRaw('07:52:00:292$009567129')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:52:00:292$009567129')">
+   <line id="BlueLine" x1="900" y1="2150" x2="500" y2="2150" stroke-width="50"  />
+<line x1="500" y1="2150" x2="510" y2="2145" stroke-width="50"  />
+<line x1="500" y1="2150" x2="510" y2="2155" stroke-width="50"  />
+<text x="550" y="2150" style="fill:black; font-size:15px; font-weight:bold;">0508_ENVELOPE_MSGB</text>
+   </a>
+<a id="msg508" onmouseover="showRaw('07:53:30:073$009570394')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:53:30:073$009570394')">
+   <line id="BlueLine" x1="900" y1="2200" x2="500" y2="2200" stroke-width="50"  />
+<line x1="500" y1="2200" x2="510" y2="2195" stroke-width="50"  />
+<line x1="500" y1="2200" x2="510" y2="2205" stroke-width="50"  />
+<text x="550" y="2200" style="fill:black; font-size:15px; font-weight:bold;">0508_ENVELOPE_MSGB</text>
+   </a>
+<a id="msg508" onmouseover="showRaw('07:54:27:699$009572490')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:54:27:699$009572490')">
+   <line id="BlueLine" x1="900" y1="2250" x2="500" y2="2250" stroke-width="50"  />
+<line x1="500" y1="2250" x2="510" y2="2245" stroke-width="50"  />
+<line x1="500" y1="2250" x2="510" y2="2255" stroke-width="50"  />
+<text x="550" y="2250" style="fill:black; font-size:15px; font-weight:bold;">0508_ENVELOPE_MSGB</text>
+   </a>
+<a id="msg508" onmouseover="showRaw('07:54:27:763$009572515')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:54:27:763$009572515')">
+   <line id="BlueLine" x1="1100" y1="2300" x2="500" y2="2300" stroke-width="50"  />
+<line x1="500" y1="2300" x2="510" y2="2295" stroke-width="50"  />
+<line x1="500" y1="2300" x2="510" y2="2305" stroke-width="50"  />
+<text x="550" y="2300" style="fill:black; font-size:15px; font-weight:bold;">0508_ENVELOPE_MSGB</text>
+   </a>
+<a id="msg508" onmouseover="showRaw('07:54:27:813$009572735')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:54:27:813$009572735')">
+   <line id="BlueLine" x1="900" y1="2350" x2="500" y2="2350" stroke-width="50"  />
+<line x1="500" y1="2350" x2="510" y2="2345" stroke-width="50"  />
+<line x1="500" y1="2350" x2="510" y2="2355" stroke-width="50"  />
+<text x="550" y="2350" style="fill:black; font-size:15px; font-weight:bold;">0508_ENVELOPE_MSGB</text>
+   </a>
+<a id="msg508" onmouseover="showRaw('07:54:28:954$009574093')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:54:28:954$009574093')">
+   <line id="BlueLine" x1="1100" y1="2400" x2="500" y2="2400" stroke-width="50"  />
+<line x1="500" y1="2400" x2="510" y2="2395" stroke-width="50"  />
+<line x1="500" y1="2400" x2="510" y2="2405" stroke-width="50"  />
+<text x="550" y="2400" style="fill:black; font-size:15px; font-weight:bold;">0508_ENVELOPE_MSGB</text>
+   </a>
+<a id="msg508" onmouseover="showRaw('07:54:29:002$009574124')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:54:29:002$009574124')">
+   <line id="BlueLine" x1="900" y1="2450" x2="500" y2="2450" stroke-width="50"  />
+<line x1="500" y1="2450" x2="510" y2="2445" stroke-width="50"  />
+<line x1="500" y1="2450" x2="510" y2="2455" stroke-width="50"  />
+<text x="550" y="2450" style="fill:black; font-size:15px; font-weight:bold;">0508_ENVELOPE_MSGB</text>
+   </a>
+<a id="msg508" onmouseover="showRaw('07:54:29:161$009574150')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:54:29:161$009574150')">
+   <line id="BlueLine" x1="900" y1="2500" x2="500" y2="2500" stroke-width="50"  />
+<line x1="500" y1="2500" x2="510" y2="2495" stroke-width="50"  />
+<line x1="500" y1="2500" x2="510" y2="2505" stroke-width="50"  />
+<text x="550" y="2500" style="fill:black; font-size:15px; font-weight:bold;">0508_ENVELOPE_MSGB</text>
+   </a>
+<a id="msg508" onmouseover="showRaw('07:54:29:228$009574294')" onmouseout="clearMsg()" onclick="showDetailedMsg('07:54:29:228$009574294')">
+   <line id="BlueLine" x1="900" y1="2550" x2="500" y2="2550" stroke-width="50"  />
+<line x1="500" y1="2550" x2="510" y2="2545" stroke-width="50"  />
+<line x1="500" y1="2550" x2="510" y2="2555" stroke-width="50"  />
+<text x="550" y="2550" style="fill:black; font-size:15px; font-weight:bold;">0508_ENVELOPE_MSGB</text>
+   </a>
+</svg>

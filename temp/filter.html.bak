@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html>
+	<head>
+		<TITLE>RTTP Filter</TITLE>
+	<script language="javascript" src="../common.js">
+			</script>
+		<script language="javascript" src="filter.js">
+		</script>
+		<LINK REL=STYLESHEET TYPE="text/css" HREF="../util.css">
+
+	</head>
+	<body onload="loaddef();">
+		<TABLE>
+			<TR height="100%">
+			  <TD width="200" valign=top>
+			  	<TABLE align=left>
+			  		<TR valign=top>
+			  		<TD><a href="javascript:get_user_filter();">Own Filters</a></TD>
+			  	</TR>
+			  	<TR>
+			  		<TD><a href="javascript:get_all_filter();">All Filters</a></TD>
+			  	</TR>
+			  	<TR>
+			  		<TD><a href="createfilter.html">Create Filter</a></TD>
+			  	</TR>
+			  	<TR>
+			  		<TD>Remove Filter</TD>
+			  	</TR>
+			  	<TR>
+			  		<TD>Modify Filter</TD>
+			  	</TR>
+			  	<TR>
+			  		<TD><a href="javascript:showbuffer();">Select Buffer Mode</a></TD>
+			  	</TR>
+			  	<TR>
+			  		<TD><a href="javascript:setversion();">Select Version</a></TD>
+			  	</TR>
+			  	</TABLE>
+			  	</TD>
+			  <TD>
+			  	<div id="filter_panel"></div>
+			  	</TD>
+			</TR>
+		</TABLE>
+	</body>
+</html>

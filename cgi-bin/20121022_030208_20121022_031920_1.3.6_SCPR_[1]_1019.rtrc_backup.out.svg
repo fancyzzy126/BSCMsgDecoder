@@ -1,0 +1,107 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-flat-20030114.dtd">
+<svg width="100%" height="100%"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
+   <title>Drag And Drop</title>
+   <script xlink:href="mainSvg.js" type="text/javascript"/>
+   <desc>
+      SVG for RTTP created by MJ.
+   </desc>
+<a id="fmm0" onmouseover="showFmm('fmm0 dummy')"><rect id="Rectangle0" x="50" y="70" width="100" height="50" style="fill:red; stroke:brown; stroke-width:1;"/>
+   <text id="DraggableText0" x="50" y="100" style="fill:black; font-size:15px; font-weight:bold;">dummy</text><line id="FmmLine0" x1="100" y1="120" x2="100" y2="100000" stroke-width="50" /></a>
+<a id="fmm321" onmouseover="showFmm('fmm321 unknown')"><rect id="Rectangle321" x="250" y="70" width="100" height="50" style="fill:red; stroke:brown; stroke-width:1;"/>
+   <text id="DraggableText321" x="250" y="100" style="fill:black; font-size:15px; font-weight:bold;">unknown</text><line id="FmmLine321" x1="300" y1="120" x2="300" y2="100000" stroke-width="50" /></a>
+<a id="msg1635" onmouseover="showRaw('1635$03:01:13:219$0693078190$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')" onmouseout="clearMsg()" onclick="showDetailedMsg('1635$03:01:13:219$0693078190$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')">
+   <line id="BlueLine" x1="100" y1="200" x2="300" y2="200" stroke-width="50"  />
+<line x1="300" y1="200" x2="290" y2="195" stroke-width="50"  />
+<line x1="300" y1="200" x2="290" y2="205" stroke-width="50"  />
+<text x="150" y="200" style="fill:black; font-size:15px; font-weight:bold;">1635_TCSL_MR_READY_IND</text>
+   </a>
+<a id="msg1635" onmouseover="showRaw('1635$03:01:13:219$0693078193$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')" onmouseout="clearMsg()" onclick="showDetailedMsg('1635$03:01:13:219$0693078193$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')">
+   <line id="BlueLine" x1="100" y1="250" x2="300" y2="250" stroke-width="50"  />
+<line x1="300" y1="250" x2="290" y2="245" stroke-width="50"  />
+<line x1="300" y1="250" x2="290" y2="255" stroke-width="50"  />
+<text x="150" y="250" style="fill:black; font-size:15px; font-weight:bold;">1635_TCSL_MR_READY_IND</text>
+   </a>
+<a id="msg1635" onmouseover="showRaw('1635$03:01:13:219$0693078196$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')" onmouseout="clearMsg()" onclick="showDetailedMsg('1635$03:01:13:219$0693078196$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')">
+   <line id="BlueLine" x1="100" y1="300" x2="300" y2="300" stroke-width="50"  />
+<line x1="300" y1="300" x2="290" y2="295" stroke-width="50"  />
+<line x1="300" y1="300" x2="290" y2="305" stroke-width="50"  />
+<text x="150" y="300" style="fill:black; font-size:15px; font-weight:bold;">1635_TCSL_MR_READY_IND</text>
+   </a>
+<a id="msg1635" onmouseover="showRaw('1635$03:01:13:219$0693078199$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')" onmouseout="clearMsg()" onclick="showDetailedMsg('1635$03:01:13:219$0693078199$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')">
+   <line id="BlueLine" x1="100" y1="350" x2="300" y2="350" stroke-width="50"  />
+<line x1="300" y1="350" x2="290" y2="345" stroke-width="50"  />
+<line x1="300" y1="350" x2="290" y2="355" stroke-width="50"  />
+<text x="150" y="350" style="fill:black; font-size:15px; font-weight:bold;">1635_TCSL_MR_READY_IND</text>
+   </a>
+<a id="msg1635" onmouseover="showRaw('1635$03:01:13:219$0693078202$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')" onmouseout="clearMsg()" onclick="showDetailedMsg('1635$03:01:13:219$0693078202$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')">
+   <line id="BlueLine" x1="100" y1="400" x2="300" y2="400" stroke-width="50"  />
+<line x1="300" y1="400" x2="290" y2="395" stroke-width="50"  />
+<line x1="300" y1="400" x2="290" y2="405" stroke-width="50"  />
+<text x="150" y="400" style="fill:black; font-size:15px; font-weight:bold;">1635_TCSL_MR_READY_IND</text>
+   </a>
+<a id="msg1635" onmouseover="showRaw('1635$03:01:13:219$0693078205$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')" onmouseout="clearMsg()" onclick="showDetailedMsg('1635$03:01:13:219$0693078205$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')">
+   <line id="BlueLine" x1="100" y1="450" x2="300" y2="450" stroke-width="50"  />
+<line x1="300" y1="450" x2="290" y2="445" stroke-width="50"  />
+<line x1="300" y1="450" x2="290" y2="455" stroke-width="50"  />
+<text x="150" y="450" style="fill:black; font-size:15px; font-weight:bold;">1635_TCSL_MR_READY_IND</text>
+   </a>
+<a id="msg1635" onmouseover="showRaw('1635$03:01:13:219$0693078208$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')" onmouseout="clearMsg()" onclick="showDetailedMsg('1635$03:01:13:219$0693078208$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')">
+   <line id="BlueLine" x1="100" y1="500" x2="300" y2="500" stroke-width="50"  />
+<line x1="300" y1="500" x2="290" y2="495" stroke-width="50"  />
+<line x1="300" y1="500" x2="290" y2="505" stroke-width="50"  />
+<text x="150" y="500" style="fill:black; font-size:15px; font-weight:bold;">1635_TCSL_MR_READY_IND</text>
+   </a>
+<a id="msg1635" onmouseover="showRaw('1635$03:01:13:421$0693078211$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')" onmouseout="clearMsg()" onclick="showDetailedMsg('1635$03:01:13:421$0693078211$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')">
+   <line id="BlueLine" x1="100" y1="550" x2="300" y2="550" stroke-width="50"  />
+<line x1="300" y1="550" x2="290" y2="545" stroke-width="50"  />
+<line x1="300" y1="550" x2="290" y2="555" stroke-width="50"  />
+<text x="150" y="550" style="fill:black; font-size:15px; font-weight:bold;">1635_TCSL_MR_READY_IND</text>
+   </a>
+<a id="msg1635" onmouseover="showRaw('1635$03:01:13:421$0693078214$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')" onmouseout="clearMsg()" onclick="showDetailedMsg('1635$03:01:13:421$0693078214$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')">
+   <line id="BlueLine" x1="100" y1="600" x2="300" y2="600" stroke-width="50"  />
+<line x1="300" y1="600" x2="290" y2="595" stroke-width="50"  />
+<line x1="300" y1="600" x2="290" y2="605" stroke-width="50"  />
+<text x="150" y="600" style="fill:black; font-size:15px; font-weight:bold;">1635_TCSL_MR_READY_IND</text>
+   </a>
+<a id="msg1635" onmouseover="showRaw('1635$03:01:13:421$0693078217$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')" onmouseout="clearMsg()" onclick="showDetailedMsg('1635$03:01:13:421$0693078217$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')">
+   <line id="BlueLine" x1="100" y1="650" x2="300" y2="650" stroke-width="50"  />
+<line x1="300" y1="650" x2="290" y2="645" stroke-width="50"  />
+<line x1="300" y1="650" x2="290" y2="655" stroke-width="50"  />
+<text x="150" y="650" style="fill:black; font-size:15px; font-weight:bold;">1635_TCSL_MR_READY_IND</text>
+   </a>
+<a id="msg1635" onmouseover="showRaw('1635$03:01:13:421$0693078220$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')" onmouseout="clearMsg()" onclick="showDetailedMsg('1635$03:01:13:421$0693078220$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')">
+   <line id="BlueLine" x1="100" y1="700" x2="300" y2="700" stroke-width="50"  />
+<line x1="300" y1="700" x2="290" y2="695" stroke-width="50"  />
+<line x1="300" y1="700" x2="290" y2="705" stroke-width="50"  />
+<text x="150" y="700" style="fill:black; font-size:15px; font-weight:bold;">1635_TCSL_MR_READY_IND</text>
+   </a>
+<a id="msg1635" onmouseover="showRaw('1635$03:01:13:421$0693078223$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')" onmouseout="clearMsg()" onclick="showDetailedMsg('1635$03:01:13:421$0693078223$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')">
+   <line id="BlueLine" x1="100" y1="750" x2="300" y2="750" stroke-width="50"  />
+<line x1="300" y1="750" x2="290" y2="745" stroke-width="50"  />
+<line x1="300" y1="750" x2="290" y2="755" stroke-width="50"  />
+<text x="150" y="750" style="fill:black; font-size:15px; font-weight:bold;">1635_TCSL_MR_READY_IND</text>
+   </a>
+<a id="msg1635" onmouseover="showRaw('1635$03:01:13:421$0693078226$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')" onmouseout="clearMsg()" onclick="showDetailedMsg('1635$03:01:13:421$0693078226$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')">
+   <line id="BlueLine" x1="100" y1="800" x2="300" y2="800" stroke-width="50"  />
+<line x1="300" y1="800" x2="290" y2="795" stroke-width="50"  />
+<line x1="300" y1="800" x2="290" y2="805" stroke-width="50"  />
+<text x="150" y="800" style="fill:black; font-size:15px; font-weight:bold;">1635_TCSL_MR_READY_IND</text>
+   </a>
+<a id="msg1635" onmouseover="showRaw('1635$03:01:13:421$0693078229$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')" onmouseout="clearMsg()" onclick="showDetailedMsg('1635$03:01:13:421$0693078229$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')">
+   <line id="BlueLine" x1="100" y1="850" x2="300" y2="850" stroke-width="50"  />
+<line x1="300" y1="850" x2="290" y2="845" stroke-width="50"  />
+<line x1="300" y1="850" x2="290" y2="855" stroke-width="50"  />
+<text x="150" y="850" style="fill:black; font-size:15px; font-weight:bold;">1635_TCSL_MR_READY_IND</text>
+   </a>
+<a id="msg1635" onmouseover="showRaw('1635$03:01:13:623$0693078232$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')" onmouseout="clearMsg()" onclick="showDetailedMsg('1635$03:01:13:623$0693078232$14 00 03 04 00 2D 63 06 01 00 32 00 16 05 00 00 00 00 00 00$nobuffer')">
+   <line id="BlueLine" x1="100" y1="900" x2="300" y2="900" stroke-width="50"  />
+<line x1="300" y1="900" x2="290" y2="895" stroke-width="50"  />
+<line x1="300" y1="900" x2="290" y2="905" stroke-width="50"  />
+<text x="150" y="900" style="fill:black; font-size:15px; font-weight:bold;">1635_TCSL_MR_READY_IND</text>
+   </a>
+</svg>

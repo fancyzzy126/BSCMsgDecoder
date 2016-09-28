@@ -1,0 +1,15 @@
+#!/bin/sh
+#module:
+#author: jzhao019
+
+cd listing
+echo "create message fields definition:"
+grep -nH "^T_MSG_[0-9]\{4\}_MODE" *.chill_lst . >~/msg_mode/msg_fields_def
+
+echo "create message definition:"
+grep -nH "^T_MSG_[0-9]\{4\}_[A-Z_]*" *.chill_lst . |sed '/T_MSG_[0-9]\{4\}_MODE /d'>~/msg_mode/msg_def
+
+echo "create mode definition:"
+grep -nH "^M_[0-9A-Z_]*" *.chill_lst . >~/msg_mode/mode_def
+
+cd ..

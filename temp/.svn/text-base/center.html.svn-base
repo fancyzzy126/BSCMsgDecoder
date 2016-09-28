@@ -1,0 +1,84 @@
+<html>
+<head>
+	<TITLE>center</TITLE> 
+	<script language="javascript" src="../common.js">
+		</script>
+		<script language="javascript" src="center.js">
+		</script>
+<style>
+*{
+ margin:0px;
+ padding:0px;
+}
+#svgdiv{
+ border:0px solid blue;
+ float:left;
+ width:80%;
+ height: expression( this.scrollHeight > document.body.clientHeight ? document.body.clientHeight : "auto" );
+ OVERFLOW: scroll; 
+ scrollbar-face-color:#70807d; 
+ scrollbar-arrow-color:#ffffff; 
+ scrollbar-highlight-color:#ffffff; 
+ scrollbar-3dlight-color:#70807d; 
+ scrollbar-shadow-color:#ffffff; 
+ scrollbar-darkshadow-color:#70807d; 
+ scrollbar-track-color:#ffffff"
+}
+
+#divContainer{
+ border:1px solid #000000;
+ float:left;
+ width:20;
+ margin-left:5px;
+ margin-right:5px;
+ cursor:pointer;
+}
+
+#msgpanel{
+ border:0px solid #ff0000;
+ float:left;
+ width:auto;
+ height:auto;
+ OVERFLOW: scroll; 
+ scrollbar-face-color:#70807d; 
+ scrollbar-arrow-color:#ffffff; 
+ scrollbar-highlight-color:#ffffff; 
+ scrollbar-3dlight-color:#70807d; 
+ scrollbar-shadow-color:#ffffff; 
+ scrollbar-darkshadow-color:#70807d; 
+ scrollbar-track-color:#ffffff"
+}
+</style>
+<LINK REL=STYLESHEET TYPE="text/css" HREF="../util.css">
+<script>
+function hideShowFunc(){
+ var leftObj = document.getElementById("svgdiv");
+ var rightObj = document.getElementById("msgpanel");
+ var divObj = document.getElementById("divContainer");
+ 
+ if(leftObj.style.display == "none"){
+  leftObj.style.display = "";
+  rightObj.style.width = "48%";
+  divObj.innerHTML = "<<";
+ }else{
+  leftObj.style.display = "none";
+  rightObj.style.width = "95%";
+  divObj.innerHTML = ">>";
+ }
+}
+</script>
+</head>
+<body onload="loadSvg()">
+<div class="outerContainer">
+ <div id="svgdiv">
+ </div>
+ <div id="divContainer" onclick="hideShowFunc()">
+  <<
+ </div>
+ <div id="msgPanel">
+  MSG
+ </div>
+</div>
+</body>
+
+</html>

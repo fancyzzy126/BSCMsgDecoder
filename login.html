@@ -1,0 +1,112 @@
+<html>
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <title>BSC Real Time Trace Parser : Login</title>
+    <script language="javascript" src="common.js"></script>
+	<SCRIPT LANGUAGE="JavaScript">
+<!-- Hide code from old browser -->
+function checkRequiredFields (input)
+{
+     var requiredFields = new Array ("cname","cpassword", "action");
+     var fieldCheck = true;
+     var fieldsNeeded = "Please input your ID and password!";
+     for (var fieldNum=0; fieldNum < requiredFields.length; fieldNum++) {
+         if ( (input.elements[requiredFields[fieldNum]].value == "") || (input.elements[requiredFields[fieldNum]].value == " ")) {
+            fieldCheck = false;
+         }
+     }
+     // ALL REQUIRED FIELDS HAVE BEEN ENTERED
+     if (fieldCheck == true) {
+     	   setOwnCookie("uname", input.elements["cname"].value, 1);
+         return true;
+     }
+     // SOME REQUIRED FIELDS ARE MISSING VALUES
+     else {
+         alert (fieldsNeeded);
+         return false;
+     }
+}
+    </SCRIPT>
+  </head>
+  <body bgcolor="#FFFFFF" text="#000080" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+    <table border="1" width="900" height="600" align="center">
+      <tr>
+        <td height="20%" bgcolor="rgb(217,144,212)">
+          <center>
+            <h1>Real Time Trace Parser</h1>
+          </center>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <table height="100%" width="100%" border="0">
+            <tr>
+              <td width="50%">
+<!--
+                <embed src="welcome.svg" width="400" height="300" type="image/svg+xml" />
+-->
+              </td>
+              <td width="50%">
+                <center>
+                  <form action="cgi-bin/account_management.cgi" method="post" name="frm_login"
+                  onsubmit="return checkRequiredFields (this);">
+                    <input type="hidden" name="action" value="login" />
+                    <table border="0">
+                      <tr>
+                        <td>Your ID</td>
+                        <td>
+                          <input type="text" name="cname" size="20" maxlength="8" />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>Password</td>
+                        <td>
+                          <input type="password" name="cpassword" size="20" maxlength="8" />
+                        </td>
+                      </tr>
+                    </table>
+                    <center>
+                      <table border="0" cellspacing="8" cellpadding="0" cols="2" width="12%">
+                        <tr>
+                          <td>
+                            <input type="submit" value=" Login " />
+                          </td>
+                          <td>
+                            <input type="reset" value=" Reset " />
+                          </td>
+                        </tr>
+                      </table>
+                      <table>
+                        <tr>
+                          <td align="center">
+                            <a href="RTTPhelp.html#Password">Forget Password</a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <a href="reg.html">New comers?Start here</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </center>
+                  </form>
+                </center>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td height="10%" align="center">All Rights Reserved</td>
+      </tr>
+    </table>
+    <center>
+<!--
+      <embed style="LEFT: 10px; POSITION: absolute; TOP: -70px" align="right"
+      src="http://www.china-holiday.com/images/flash/005.swf" width="700" height="400" type="application/x-shockwave-flash"
+      wmode="transparent" quality="high" />
+-->   
+   </center>
+  </body>
+</html>

@@ -1,0 +1,376 @@
+
+function showRaw(content)
+{
+	msg = content
+	if(content && content.length > 0 && content.indexOf("$") != -1)
+	{
+		msgs = content.split("$")
+		msg = ""
+		for(i=0;i<msgs.length;i++)
+		{
+			msg	+= msgs[i] + "<p>"
+		}	
+	}
+	msgDiv = document.getElementById("msgPanel")
+	msgDiv.innerHTML = msg
+}
+
+function clearMsg()
+{
+	//empty = "Show msg content"
+	//msgDiv = document.getElementById("msgPanel")
+	//msgDiv.innerHTML = empty
+}
+
+function loadSvg()
+{
+	svg_curr_index = getCookie("svg_curr_index");
+	svg_num = getCookie("svg_num");
+	svg_fname = getCookie("svg_file_name");
+  svgwidth = getCookie("svg_width");
+  svgheight = getCookie("svg_height");
+  
+  if (svg_num && svg_fname && svgwidth && svgheight)
+  //if(1)
+  {
+  	svgContent = "";
+  	if(svg_num > 1)
+  	{
+  		if(svg_curr_index)
+  		{
+  			if(svg_curr_index > 0)
+  				svgContent += "<a href='#' LANGUAGE=javascript onclick='page_nevigate(true)'><-prev</a>";
+  			svgContent += "&nbsp&nbsp";
+  			if(svg_curr_index < svg_num-1)
+  				svgContent += "<a href='#' LANGUAGE=javascript onclick='page_nevigate(false)'>next-></a>";
+  		}
+  		else
+  		{
+  			svg_curr_index = 0;
+  			setOwnCookie("svg_curr_index", svg_curr_index, 1);
+  			svgContent += "&nbsp&nbsp";
+  			svgContent += "<a href='#' LANGUAGE=javascript onclick='page_nevigate(false)'>next-></a>";
+  		}
+  		svgContent += "&nbsp&nbsp";
+  		svgContent += String(Number(svg_curr_index) +1) + "/" + svg_num + "<p>";
+  	}
+  	else
+  		svg_curr_index = 0;
+  	//alert(svg_curr_index);
+  	svg_fname = svg_fname.split(";")[svg_curr_index];
+  	//alert(svg_fname);
+  	svgwidth = svgwidth.split(";")[svg_curr_index];
+  	//alert(svgwidth);
+  	svgheight = svgheight.split(";")[svg_curr_index];
+  	//alert(svgheight);
+  	svgContent += '<embed src="' + svg_fname;
+  	svgContent += '" width="' + svgwidth;
+  	svgContent += '" height="' + svgheight;
+  	svgContent += '" type="image/svg+xml" pluginspage="http://172.24.178.26/SVGView.exe" /><p>';
+  	if(svg_num > 1)
+  	{
+  		if(svg_curr_index)
+  		{
+  			if(svg_curr_index > 0)
+  				svgContent += "<a href='#' LANGUAGE=javascript onclick='page_nevigate(true)'><-prev</a>";
+  			svgContent += "&nbsp&nbsp";
+  			if(svg_curr_index < svg_num-1)
+  				svgContent += "<a href='#' LANGUAGE=javascript onclick='page_nevigate(false)'>next-></a>";
+  		}
+  		else
+  		{
+  			svg_curr_index = 0;
+  			setOwnCookie("svg_curr_index", svg_curr_index, 1);
+  			svgContent += "&nbsp&nbsp";
+  			svgContent += "<a href='#' LANGUAGE=javascript onclick='page_nevigate(false)'>next-></a>";
+  		}
+  		svgContent += "&nbsp&nbsp";
+  		svgContent += String(Number(svg_curr_index) +1) + "/" + svg_num + "<p>";
+  	}
+  }
+  else
+  {
+  	alert("Please upload trace file");
+  	return;
+  }
+  //svgContent = '<embed src="../trace/20100421_074648_20100421_075432_1.3.6_SCPR_[1]_1014.rtrc_backup.out.svg" width="6670" height="11820" type="image/svg+xml" pluginspage="http://172.24.178.26/SVGView.exe" />';
+	//alert(svgContent);
+	svgDiv = document.getElementById("svgdiv");
+	svgDiv.innerHTML = svgContent;
+	//alert(window.location);
+}
+
+function page_nevigate(flag)
+{
+	svg_curr_index = Number(getCookie("svg_curr_index"));
+	if(flag)
+		svg_curr_index -= 1;
+	else
+		svg_curr_index += 1;
+	setOwnCookie("svg_curr_index", svg_curr_index, 1);
+	loadSvg();	
+}
+
+function showFmm(content)
+{
+	window.status = content	
+}
+
+function decode_single_msg()
+{
+  msg_content = document.getElementById("msgcontent").value;
+
+ //alert(msg_content);
+ if (!msg_content || msg_content == "") {
+     alert("Message is empty!");
+     return;
+ }
+ cuname = getCookie("uname");
+	version = getCookie(cuname+"_version");
+	if (version == null || version == "")
+	{
+	    alert("Version not selected! Please select Version.");
+		return;
+	}
+  post_data = "action=decodesinglemsg";
+  post_data += "&msgcontent=" + msg_content;
+  post_data += "&uname=" + cuname;
+  post_data += "&version=" + version;
+  //alert(post_data);
+  ajax_sendreq(post_data, "showmsg", showmsg_proxy, null, null); 	
+}
+
+function showmsg_proxy(de, param)
+{
+	  //Clear editmode
+	  clear_div("editmode");
+    return Display(de,1,0,"", 0);
+}
+ 
+function clear_div(divID)
+{
+    div_tag = document.getElementById(divID);
+    div_tag.innerHTML = "";
+}
+function showDetailedMsg(msg_content)
+{
+	var xmlHttp;
+	var uri;
+	var post_data;
+	cuname = getCookie("uname");
+	if (cuname == null || cuname == "")
+	{
+				alert("Please login!");
+				window.top.location = "../index.html"
+				return;
+	}
+	version = getCookie(cuname+"_version");
+	if (version == null || version == "")
+	{
+	    content = "Version not selected! <p>";
+		div_tag = document.getElementById('msgPanel');
+        div_tag.innerHTML = content;
+		return;
+	}
+	uri = "http://" + document.location.host
+	uri += "/cgi-bin/ajax_mgt.cgi";
+	post_data = "action=decodemsg&msg=" + msg_content;
+	post_data += "&version="+version;
+	ajax_sendreq(post_data, "msgPanel", showmsg_proxy, null, null);
+}
+
+   function Display(documentElement,n, gDiv, nblack, flag)
+ {
+ 	  var a = "";
+    var divSingle="div"+n;
+        if( documentElement.childNodes.length>0)
+   {
+      gDiv=gDiv+1;
+	  a=a+"<div name="+gDiv + "_" + flag+">";
+	  var tmp_flag = flag;
+      for(var i=0;i<documentElement.childNodes.length;i++)
+     {
+	  
+       var child=documentElement.childNodes(i);
+       newName = child.tagName;
+  		 if(child.tagName.indexOf(".") != -1)
+  		   {
+  		   	nameArray = child.tagName.split(".");
+  		   	len = nameArray.length;
+  		   	newName = nameArray[len-1];
+  		   	}
+  		  if(newName == "NULL")
+  		    newName = "--"
+  		  newName = nblack + newName;
+       if( child.childNodes.length>0)
+        {
+		   var temp=gDiv+1;
+		   var spanId="s"+gDiv;
+		   spanId += tmp_flag;
+	       a=a+"<div id="+divSingle+">           <span >"+newName+"                       </span>    <span style=\"color: #3300ff\">"+child.getAttribute("type")+"</span> <span                        id="+spanId+" style='color: #ff0000; cursor:hand' onclick='Expand("+temp+"," + tmp_flag +")'>-</span></div>";
+	       //alert(a);
+	       a=a+Display(child,n+1,gDiv, nblack+"&nbsp&nbsp&nbsp&nbsp", tmp_flag);
+		 }
+  		 else
+  		 	{
+  		 		if(child.getAttribute("type"))
+  		 		{
+  		 			if(child.getAttribute("value"))
+  		 	      a=a+"<div id="+divSingle+"><span >"+newName+"                       </span>    <span style=\"color: #3300ff\">"+child.getAttribute("type")+"</span>     <span style=\"color: #9900cc\"> "+child.getAttribute("value")+"</span></div>";
+            else
+        	    a=a+"<div id="+divSingle+"><span >"+newName+"                       </span>    <span style=\"color: #3300ff\">"+child.getAttribute("type")+"</span></div>";
+          }
+  		 		else
+  		 			if(child.getAttribute("value"))
+  		 	      a=a+"<div id="+divSingle+"><span >"+newName+"                       </span>     <span style=\"color: #9900cc\"> "+child.getAttribute("value")+"</span></div>";
+            else
+        	    a=a+"<div id="+divSingle+"><span >"+newName+"                       </span>    </div>";
+  		 	  }
+  		 	tmp_flag += 1;
+      }
+	  //if(documentElement.getAttribute("type")=="union")
+	 a=a+'</div>';
+	 return a;
+	}
+	 
+ }
+
+  function Expand(divAll, flag)
+ {
+       var spanId="s"+(divAll-1);
+       spanId += flag;
+       divName = ""
+       divName += divAll + "_" + flag;
+       var s=document.getElementById(spanId);
+       var vs =document.getElementsByTagName("div");
+       for(i=0;i<vs.length;i++)
+       {
+       	v = vs[i];
+       	if(v.getAttribute("name")==divName)
+       	{
+         	if(v.style.display=='none')
+         	{
+         		v.style.display='block';
+         		s.innerText="-";
+         	}
+         	else
+         	{
+         		v.style.display='none';
+         		s.innerText="+";
+          }
+         }
+       }
+ }
+ 
+ 
+ 
+ 
+ 
+function showprogress( filename )
+{
+	uname = getCookie("uname");
+	fname = getCookie(uname+"_filter");
+	if (uname == null || uname == "")
+	{
+		alert("please login");
+		//target = "_top";
+		window.top.location = "../index.html";
+		return;
+		}
+	if (fname == null || fname == "")
+	{
+		alert("please select filter");
+		//location.target = "_top";
+		window.top.location = "../temp/mainframe.html";
+		return;
+		}
+	version = getCookie(uname+"_version");
+	if (version == null || version == "")
+	{
+	    alert("Version not selected! <p>");
+		window.top.location = "../temp/mainframe.html";
+		return;
+	}
+	//setInterval(updateprogress,1000);
+	post_data = "action=parsetrace&filename=" + filename;
+	post_data += "&uname=" + uname;
+	post_data += "&fname=" + fname;
+	post_data += "&version=" + version;
+	//alert(post_data);
+  ajax_sendreq(post_data, "prog", preshow, null, null);
+}
+
+function updateprogress()
+{
+  //uploadStr = '	<form enctype="multipart/form-data"  action="save_file.cgi" method="post">   <p>File: <input type="file" name="filename" /></p>    <p><input type="submit" value="Upload" /></p>    </form>';
+	progDiv = document.getElementById("prog");
+	progDiv.innerHTML = "123";	
+}
+	
+	function preshow(de, param)
+	{
+		if( de.childNodes.length==2)
+   {
+   	  svg_num = de.childNodes(0).getAttribute("value");
+   	  svg_list = de.childNodes(1);
+   	  if(svg_num != svg_list.childNodes.length)
+   	  	return "Parse trace error: svg file number error.";
+   	  //alert("svg_num " + svg_num);
+   	  setOwnCookie("svg_num", svg_num, 1);
+   	  var filename="";
+   	  var swidth="";
+   	  var sheight="";
+      for(var i=0;i<svg_list.childNodes.length;i++)
+      {
+       var child=svg_list.childNodes(i);
+       for(var j=0;j<child.childNodes.length;j++)
+       {
+       		var svg_file=child.childNodes(j);
+       		newName = svg_file.tagName;
+  		 		if(newName == "svg_file_name")
+  		 		{
+  		 			  filename += svg_file.getAttribute("value") + ";";
+  		 		}
+  		 		if(newName == "svg_width")
+  		 		{
+  		 				swidth += svg_file.getAttribute("value") + ";";
+  		 		}
+  		 		if(newName == "svg_height")
+  		 		{
+  		 				sheight += svg_file.getAttribute("value") + ";";
+  		 		}
+  		 }
+  		}
+  		setOwnCookie("svg_curr_index", "0", 1);
+  		//alert("svg_file_name " + filename);
+  		setOwnCookie("svg_file_name", filename, 1);
+  		//alert("svg_width " + swidth);
+  		setOwnCookie("svg_width", swidth, 1);
+  		//alert("svg_height " + sheight);
+  		setOwnCookie("svg_height", sheight, 1);
+  		//alert("redirect..");
+  		location = "../temp/center.html"  		 
+		}
+		else
+		{
+				return "Parse trace error: parameter number error.";	
+		}
+	}
+
+function load_singlemsg_def()
+{
+    cuname = getCookie("uname");
+	version = getCookie(cuname+"_version");
+	if (version == null || version == "")
+	{
+	    content = "Version not selected! <p>"
+	}
+	else
+	{
+	    content = "User: " + cuname + "<p>";
+		content += "Version: " + version + "<p>";
+	}
+	var msgDiv;
+	msgDiv = document.getElementById("user_panel")
+	msgDiv.innerHTML=content
+}

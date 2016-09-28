@@ -1,0 +1,41 @@
+0000000001 06:35:20:740 bsctrc.c 489 ERIR:File Open successfully.
+0000000002 06:35:20:757 vosmain.c 464 ERIR:File corrupted. VCE ID not correct in the Daily trace configuration file.
+0000000004 06:35:20:759 bsctrc.c 489 ERIR:File Open successfully.
+0000000005 06:35:20:873 DHTCU_FMM 14562 NORM:0019_DH_TCU:ATP1,INTLV5,ATSY255
+0000000006 06:35:20:878 RFMGT_L3 54254 NORM:ACT_PARAM,INIT,ACT_SDY[1,5,2]
+0000000007 06:35:20:885 unknown-file 32877 WARN:B_ACT=1 INIT_LEV=5 B_ACT_ST=255
+0000000012 06:37:39:153 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 54userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000013 06:37:39:153 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 54userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000014 06:37:39:154 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 54userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000015 06:37:39:154 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 54userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000016 06:37:39:154 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 54userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000017 06:37:39:154 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 54userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000018 06:37:39:154 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 55userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000019 06:37:39:154 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 55userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000020 06:37:39:154 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 55userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000021 06:37:39:154 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 55userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000022 06:37:39:154 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 55userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000023 06:37:39:154 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 55userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000032 06:41:34:763 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 54userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000033 06:41:34:763 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 54userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000034 06:41:34:763 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 54userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000035 06:41:34:763 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 54userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000036 06:41:34:763 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 54userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000037 06:41:34:763 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 54userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000038 06:41:34:763 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 55userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000039 06:41:34:763 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 55userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000040 06:41:34:763 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 55userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000041 06:41:34:763 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 55userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000042 06:41:34:763 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 55userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000043 06:41:34:763 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 55userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000052 06:45:37:261 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 54userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000053 06:45:37:261 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 54userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000054 06:45:37:261 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 54userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000055 06:45:37:261 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 54userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000056 06:45:37:261 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 54userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000057 06:45:37:261 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 54userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000058 06:45:37:261 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 55userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000059 06:45:37:261 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 55userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000060 06:45:37:261 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 55userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000061 06:45:37:261 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 55userData0: 1 userData1: 224 userData2: 235, userData3: 0
+0000000062 06:45:37:261 voserr.c 556 ERIR:Error report called. PROC: G_S_YS9KYX_ME_BTS_TCU class: 6 type: 9 seq: 55userData0: 1 userData1: 224 userData2: 235, userData3: 0

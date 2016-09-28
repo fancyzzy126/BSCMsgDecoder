@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html>
+<head>
+
+<link rel=File-List href="format_files/filelist.xml">
+<link rel=Edit-Time-Data href="format_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>RTTP Decode Message</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>jzhao019</o:Author>
+  <o:LastAuthor>jzhao019</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2012-07-20T02:42:00Z</o:Created>
+  <o:LastSaved>2012-07-20T02:43:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>35</o:Words>
+  <o:Characters>200</o:Characters>
+  <o:Lines>1</o:Lines>
+  <o:Paragraphs>1</o:Paragraphs>
+  <o:CharactersWithSpaces>234</o:CharactersWithSpaces>
+  <o:Version>10.6870</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>120</w:Zoom>
+  <w:Compatibility>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:SimSun;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+@font-face
+	{font-family:SimSun;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 135135232 16 0 262145 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:SimSun;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	mso-header-margin:42.55pt;
+	mso-footer-margin:49.6pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+</style>
+<![endif]-->
+<script language="JavaScript"  src="../common.js">
+</script>
+
+<script language="JavaScript"  src="center.js">
+</script>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+	
+
+<body lang=ZH-CN style='tab-interval:21.0pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal><span lang=EN-US>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Please input the message like this: &nbsp; </span></p><input type="button" value="back" onclick="window.history.back()">
+
+
+<form>
+
+<p class=MsoNormal><span lang=EN-US><span style='display:none;mso-hide:all'><INPUT TYPE="hidden" NAME="action" VALUE="decodesinglemsg"></span><span
+style='display:none;mso-hide:all'><INPUT TYPE="hidden" NAME="uname"></span><o:p></o:p></span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=1 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:.7pt' id=Table1>
+ <tr style='mso-yfti-irow:0'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US><TEXTAREA ROWS="10" COLS="100" NAME="msgcontent"
+  id=msgcontent>0010367302 09:41:55:837 vostask.c 1100 IMRV:1A 01 00 28 20 4D EA 00 01 00 10 00 01 00 2C 00 01 00 68 29 0A 09 EC 00 01 00 1D 00 0A 00 00 00 01 00 44 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 &#13;&#10;0010367303 09:41:55:837 vostask.c 1103 IMRV:07 40 01 01 01 01 00 00 00 01 01 01 01 01 01 00 00 00 00 00 00 00 00 00 00 00 2B 04 01 00 03 02 00 01 01 01 3C 00 01 00 FF FF 03 03 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 00 01 0F 0F FF FF 00 00 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 0A 04 00 FF DC 07 04 13 09 29 37 08 11 FF FF 01 01 FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF &#13;&#10;0010367304 09:41:55:837 vostask.c 1140 IMRV:VCE 1 msg 234 FMM82-&gt;FMM8</TEXTAREA></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+ 
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2;mso-yfti-lastrow:yes'>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span lang=EN-US><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+</form>
+
+</div>
+
+</body>
+
+</html>

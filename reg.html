@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<html>
+  <head>
+    <meta name="generator"
+    content="HTML Tidy for HTML5 (experimental) for Windows https://github.com/w3c/tidy-html5/tree/c63cc39" />
+    <title>ARTS-WebARTS-Web : Registration</title>
+	<SCRIPT LANGUAGE="JavaScript">
+	function checkRequiredFields(input)
+	{
+		var requiredFields = new Array("logonid","name","mailid","phone","team", "pwd1","pwd2");
+		var fieldNames = new Array("ID","Name","E-Mail","Phone","Team", "Password","Confirm Password");
+		var fieldCheck = true;
+		var missingfields = "Those Fields: "
+		var firstFieldNeeded;
+		for(var fieldNum=0; fieldNum < requiredFields.length; fieldNum++) {
+			if ((input.elements[requiredFields[fieldNum]].value == "") ||(input.elements[requiredFields[fieldNum]].value == " ")) {
+				missingfields += fieldNames[fieldNum];
+				if(fieldNum < requiredFields.length - 1)
+					missingfields += ", "
+            fieldCheck = false;
+			}
+		}
+		missingfields += " Needed!"
+		// ALL REQUIRED FIELDS HAVE BEEN ENTERED
+		if (fieldCheck == true)
+		{
+			return true;
+		}
+		// SOME REQUIRED FIELDS ARE MISSING VALUES
+		else {
+			alert(missingfields);
+			return false;
+		}
+	}
+function checkEmail(obj)
+{
+  if (obj.value.substring(0,5)=="smtp:") {
+     alert ("INVALID EMAIL ADDRESS");
+	obj.focus();
+	return false;
+  }
+  	for (var i = 0; i < obj.value.length; i++) {
+      	ch = obj.value.substring(i, i + 1)
+      	if (((ch<"0")||(ch>"z")||((ch<"a")&&(ch>"Z"))||((ch<"A")&&(ch>"9")))&&(ch!="-")&&(ch!="_")&&(ch!="@")&&(ch!=".")) {
+			alert("INVALID EMAIL ADDRESS")
+			obj.focus();
+			return false;
+      	}
+     }
+  	// IF EMAIL ADDRESS HAS A '@' CHARACTER AND A '.'
+  	if (obj.value.length>0 && ((obj.value.indexOf("@") == -1)||(obj.value.indexOf(".") == -1))) {
+    		alert ("UER -20986 : INVALID EMAIL ADDRESS");
+		obj.focus();
+    		return false;
+  	} else {
+		return true;
+	}
+}
+function stringCompare(str1, str2)
+{
+//TEST SUR LA LONGUEUR DES CHAINES
+if (str1.length!=str2.length)  {
+	alert("THE 2 PASSWORDS ARE DIFFERENTS")
+	document.formreg.pwd1.value="";
+	return ("");
+	}
+	else {
+		for (var i = 0; i < str1.length; i++) {
+			if (str1[i]!=str2[i]) {
+				alert("THE 2 PASSWORDS ARE DIFFERENTS");
+				document.formreg.pwd1.value="";
+				return ("");
+				}
+		}
+		return str1;
+	}
+}
+</script>
+  </head>
+  <body text="#000080" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+    <center>
+      <table border="0" cellpadding="0" width="100%" height="80" bgcolor="#33CC00">
+        <tr>
+          <td align="center">
+            <b>
+              <font color="#FFFFFF">
+                <font size="+2">RTTP-User Registration</font>
+              </font>
+            </b>
+          </td>
+        </tr>
+      </table>
+      <center>
+        <p>
+          <i>
+            <nobr>This is your first access. Please register yourself by filling the following form.</nobr>
+          </i>
+        </p>
+        <p>
+          <i>
+            <nobr>Once declared, you can fast your analysis. Register only once: during the first access to RTTP.</nobr>
+          </i>
+        </p>
+      </center>
+      <form name="formreg" action="cgi-bin/account_management.cgi" method="post"
+      onsubmit="return checkRequiredFields(this) &amp;&amp; checkEmail(formreg.mailid);">
+        <center>
+          <table border="0" cellspacing="5" cellpadding="0">
+            <tr>
+              <td>
+                <input type="hidden" name="action" value="reg" />
+              </td>
+            </tr>
+            <tr>
+              <td align="right">
+                <b>ID&nbsp;</b>
+              </td>
+              <td>
+                <input type="text" size="30" maxlength="8" name="logonid"
+                onfocus="window.status=&#39;Enter your logon. Ex : jdupont&#39;" />
+              </td>
+            </tr>
+            <tr>
+              <td align="right">
+                <b>Name&nbsp;</b>
+              </td>
+              <td>
+                <input type="text" size="30" maxlength="15" name="name"
+                onfocus="window.status=&#39;Enter your complete name. Ex : Jean DUPONT&#39;" />
+              </td>
+            </tr>
+            <tr>
+              <td align="right">
+                <b>E-Mail&nbsp;</b>
+              </td>
+              <td>
+                <input type="text" size="60" maxlength="128" name="mailid"
+                onfocus="window.status=&#39;Enter your email. Ex : jean.dupont@alcatel.fr&#39;"
+                onchange="return(checkEmail(this,this.value));" />
+              </td>
+            </tr>
+            <tr>
+              <td align="right">
+                <b>Phone&nbsp;</b>
+              </td>
+              <td valign="middle">
+                <input type="text" size="30" maxlength="20" name="phone"
+                onfocus="window.status=&#39;Enter your phone number. Ex : (+33) 01.02.03.04.05&#39;" />
+              </td>
+            </tr>
+            <tr>
+              <td align="right">
+                <b>Team&nbsp;</b>
+              </td>
+              <td valign="middle">
+                <input type="text" size="30" maxlength="15" name="team"
+                onfocus="window.status=&#39;Enter your team\&#39;s name. Ex : FM&#39;" />
+              </td>
+            </tr>
+            <tr>
+              <td align="right">
+                <b>Password&nbsp;</b>
+              </td>
+              <td>
+                <input type="password" size="30" maxlength="8" name="pwd1" onfocus="window.status=&#39;Enter your password&#39;" />
+              </td>
+            </tr>
+            <tr>
+              <td align="right">
+                <b>Confirm Password&nbsp;</b>
+              </td>
+              <td>
+                <input type="password" size="30" maxlength="8" name="pwd2" onfocus="window.status=&#39;Confirm your password&#39;"
+                onchange="this.value=stringCompare(this.value, document.formreg.pwd1.value)" />
+              </td>
+            </tr>
+          </table>
+        </center>
+        <center>
+          <table border="0" cellspacing="8" cellpadding="0" cols="2" width="12%">
+            <tbody>
+              <tr>
+                <td>
+                  <input type="submit" name="submit" value=" OK " />
+                </td>
+                <td>
+                  <input type="reset" value=" Reset " />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </center>
+      </form>
+      <hr width="100%" size="1" />
+      <table align="center" width="100%">
+        <tr>
+          <td align="center">All Rights Reserved</td>
+        </tr>
+      </table>
+    </center>
+  </body>
+</html>

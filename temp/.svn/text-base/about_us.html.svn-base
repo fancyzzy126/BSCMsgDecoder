@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html>
+<head>
+	<TITLE>about us page</TITLE>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	</style>
+	<script language="javascript">
+	</script>
+</head>
+<body>
+	<div style="margin:20px 0px; font-size:26px;">
+		QIC: BSC消息解析平台，<a href="mailto:bsc-msg-decode-enhance@list.alcatel-lucent.com">@懂你圈</a>
+	</div>
+	<div>
+		<table>
+			<tr><th>Team member: </th><td>Martin MA, Sara WU, Ever ZHAO, Jass JIAO, Irone LI, Ross WANG, Bella SUN, Bill CAO, Chason DU</td></tr>
+		</table>
+	</div>
+</body>
+</html>

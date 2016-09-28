@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html>
+	<head>
+		<TITLE>RTTP Decode Message</TITLE>
+		<script language="javascript" src="../common.js"></script>
+		<script type="text/javascript" src="excanvas.js"></script>
+		<script type="text/javascript" src="html5.js"></script>
+		<script language="javascript" src="xml_gdb.js"></script>
+		<script language="javascript" src="filter.js"></script>
+		<script language="javascript" src="center.js"></script>
+		<link rel="stylesheet" type="text/css" media="all" href="xml_gdb.css">
+		<style>
+		li {
+			list-style:none;
+		}
+
+		#tab_t {
+			height:24px;
+		}
+
+		#tab_t li {
+			float:left;
+			width:150px;
+			height:24px;
+			line-height:24px;
+			text-align:center;
+			border:1px solid #ccc;
+			background:#f5f5f5;
+			cursor:pointer;
+		}
+
+		#tab_t .active {
+			position:relative;
+			background:#fff;
+			font-weight:bold;
+		}
+
+		#tab_t .normal {
+		}
+
+		#tab_c {
+			border:1px solid #ccc;
+			padding:20px;
+		}
+		</style>
+		<script language="javascript">
+			function tabs(thisObj, Num) {
+				if (thisObj.className == "active") return;
+				var tabTitleList = document.getElementById("tab_t").getElementsByTagName("li");
+				for (i = 0; i < tabTitleList.length; i++) {
+					var tabContent = document.getElementById("tab_content" + i);
+					if (i == Num) {
+						tabTitleList[i].className = "active";
+						tabContent.style.display = "block";
+					} else {
+						tabTitleList[i].className = "normal";
+						tabContent.style.display = "none";
+					}
+				}
+			}
+		</script>
+	</head>
+	<body onload="load_singlemsg_def();">
+		<div style="margin:20px 0px; font-size:26px;">
+			Parse BSC real time message trace
+		</div>
+		<div>
+			<span>please input the message: </span>
+			<a href="javascript:example1()">example1</a>
+			<a href="javascript:example2()">example2</a>
+			<a href="javascript:example3()">example3</a>
+		</div>
+		<form name="single_msg">
+			<input type="hidden" name="action" value="decodesinglemsg">
+			<input type="hidden" name="uname">
+			<table id="table1" cellspacing="1" cellpadding="1" width="100%" border="0">
+				<tr>
+					<td><fieldset style="width:820px;">
+						<legend>Option</legend>
+						<table>
+							<tr>
+								<td>Version</td><td><select id="version" style="width:254px;"></select><span>*</span></td>
+								<td width="50px"></td>
+								<td>Object Name</td><td><input id="objname" style="width:250px;"/></td>
+							</tr>
+							<tr>
+								<td>Buffer Mode</td><td><input id="buffermode" style="width:250px;"/></td>
+								<td width="50px"></td>
+								<td>Field Mode</td><td><input id="fieldmode" style="width:250px;"/></td>
+							</tr>
+						</table>
+					</fieldset></td>
+				</tr>
+				<tr>
+					<td><fieldset style="width:820px;">
+						<legend>Message Content</legend>
+						<textarea id="msgcontent" name="msgcontent" rows="10" style="width:99%;" ></textarea>
+					</fieldset></td>
+				</tr>
+				<tr>
+					<td>
+						<input id="button2" type="button" value="decode" onclick="javascript:decode_single_msg();" rel="external">
+						<input id="button1" type="reset" value="reset" name="reset" onclick="javascript:clear_div('showmsg');" rel="external">
+					</td>
+				</tr>
+				<tr>
+					<td><fieldset style="width:820px;">
+						<legend>Result</legend>
+						<div id="showmsg"></div>
+					</fieldset></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
